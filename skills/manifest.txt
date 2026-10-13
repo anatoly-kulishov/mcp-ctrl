@@ -1,0 +1,36 @@
+# Canonical skill names expected across harnesses (mirrors KEEP in ~/.agents/sync-skills.sh).
+# mcp-ctrl skills sync --dry-run reads KEEP from the shell script; this file documents the set for the shared repo.
+full-review
+deslop
+thermo-nuclear-code-quality-review
+adversarial-review
+differential-review
+fp-check
+variant-analysis
+verification-before-done
+ponytail
+playwright-cli
+orchestrate
+figma-code-connect
+supabase
+supabase-postgres-best-practices
+vercel-cli-with-tokens
+vercel-optimize
+ship-ready
+web-design-guidelines
+getdesign
+find-docs
+code-review
+diagnosing-bugs
+tdd
+resolving-merge-conflicts
+writing-for-agents
+research
+grilling
+handoff
+implement
+codebase-design
+domain-modeling
+improve-codebase-architecture
+task-observer
+graphify

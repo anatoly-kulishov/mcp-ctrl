@@ -1,0 +1,8 @@
+{
+  "name": "figma",
+  "description": "Figma remote MCP (enable only when working with designs)",
+  "type": "remote",
+  "url": "https://mcp.figma.com/mcp",
+  "env_keys": [],
+  "notes": "Often disabled by default to save context; mcp-ctrl mcp enable figma --harness opencode"
+}

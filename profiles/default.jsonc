@@ -1,0 +1,8 @@
+{
+  "name": "default",
+  "description": "Baseline MCP + full KEEP skills for OpenCode / Cursor / Codex",
+  "mcp": ["playwright", "youtrack"],
+  "optional_mcp": ["figma"],
+  // null = all names from skills/manifest.txt
+  "skills": null
+}

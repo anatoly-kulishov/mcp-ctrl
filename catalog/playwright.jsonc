@@ -1,0 +1,8 @@
+{
+  "name": "playwright",
+  "description": "Playwright browser automation MCP (npx)",
+  "type": "stdio",
+  "command": "npx",
+  "args": ["-y", "@playwright/mcp"],
+  "env_keys": []
+}

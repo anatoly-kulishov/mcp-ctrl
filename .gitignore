@@ -1,0 +1,15 @@
+# secrets & local state
+secrets/
+*.bak-*
+.env
+.env.*
+*.pem
+*.key
+
+# local overrides (may contain machine paths; keep template only)
+# do not commit real tokens ever
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+.idea/

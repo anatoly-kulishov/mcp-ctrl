@@ -1,0 +1,10 @@
+{
+  "name": "youtrack",
+  "description": "YouTrack issue tracker (local stdio MCP)",
+  "type": "stdio",
+  // Override with --command if your install path differs
+  "command": "$HOME/youtrack-mcp/.venv/bin/youtrack-mcp",
+  "args": [],
+  "env_keys": ["YOUTRACK_TOKEN"],
+  "notes": "Install youtrack-mcp locally, then: mcp-ctrl token set youtrack <token|file>"
+}

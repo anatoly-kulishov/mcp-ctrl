@@ -1,0 +1,18 @@
+{
+  "name": "frontend",
+  "description": "UI-focused subset: playwright/figma MCP + design/review skills",
+  "mcp": ["playwright"],
+  "optional_mcp": ["figma"],
+  "skills": [
+    "ponytail",
+    "find-docs",
+    "figma-code-connect",
+    "getdesign",
+    "web-design-guidelines",
+    "code-review",
+    "deslop",
+    "playwright-cli",
+    "tdd",
+    "diagnosing-bugs"
+  ]
+}
