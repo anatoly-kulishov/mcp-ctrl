@@ -13,7 +13,7 @@
 
 **Универсальный пульт для MCP и skills** across OpenCode, Cursor и Codex.
 
-Разные форматы конфигов (JSONC / JSON / TOML), разное хранение токенов и рассинхрон скиллов — больше не нужно править четыре файла руками.
+Разные форматы конфигов (JSONC / JSON / TOML), разное хранение токенов и рассинхрон скиллов - больше не нужно править четыре файла руками.
 
 [Quick Start](#-quick-start) · [Features](#-features) · [CLI](#-cli) · [FAQ](#-faq)
 
@@ -27,7 +27,7 @@
 - свой способ хранить секреты (inline / `{file:}` / env)
 - свой каталог skills (часто через симлинки)
 
-Смена YouTrack-токена = правка в 3 местах. Забыл одно — 401. Cursor **не** подставляет `$VAR` в `mcp.json`.
+Смена YouTrack-токена = правка в 3 местах. Забыл одно - 401. Cursor **не** подставляет `$VAR` в `mcp.json`.
 
 **Решение.** Один CLI, который:
 
@@ -86,7 +86,7 @@ flowchart TD
 
 | Feature | Description | Status |
 | :------ | :---------- | :----- |
-| **Status matrix** | server × harness → active / off / — | ✅ v0.2 |
+| **Status matrix** | server × harness → active / off / - | ✅ v0.2 |
 | **Plan** | MCP + skills diff, без записи | ✅ v0.2 |
 | **MCP CRUD** | add / remove / enable / disable по harness | ✅ v0.2 |
 | **Token sync** | OpenCode `{file:}` + Cursor/Codex inline | ✅ v0.2 |
@@ -146,7 +146,7 @@ mcp-ctrl doctor
 ```text
 server      opencode  cursor  codex
 ----------  --------  ------  ------
-figma       off       —       active
+figma       off       -       active
 playwright  active    active  active
 youtrack    active    active  active
 ```
@@ -209,7 +209,7 @@ mcp-ctrl profile apply default
 mcp-ctrl profile apply frontend --with-optional   # + figma (disabled)
 ```
 
-> `profile apply <subset> --prune` **откажется** резать полный KEEP — защита от случайного удаления skills.
+> `profile apply <subset> --prune` **откажется** резать полный KEEP - защита от случайного удаления skills.
 
 ---
 
@@ -226,7 +226,7 @@ mcp-ctrl profile apply frontend --with-optional   # + figma (disabled)
 
 ### Tool config
 
-`~/.config/mcp-ctrl/config.jsonc` — опциональные overrides:
+`~/.config/mcp-ctrl/config.jsonc` - опциональные overrides:
 
 ```jsonc
 {
@@ -284,13 +284,13 @@ mcp-ctrl/
 
 ### Sync modes (skills)
 
-**Safe (default)** — create / relink only, never delete extras:
+**Safe (default)** - create / relink only, never delete extras:
 
 ```bash
 mcp-ctrl skills sync
 ```
 
-**Prune** — ещё и удаляет лишнее в targets (не в `~/.agents/skills`):
+**Prune** - ещё и удаляет лишнее в targets (не в `~/.agents/skills`):
 
 ```bash
 mcp-ctrl skills sync --prune
@@ -317,7 +317,7 @@ Codex `.system` не трогается.
 ## FAQ
 
 **Чем это отличается от vsync?**  
-vsync — отличный общий sync source→targets. mcp-ctrl заточен под наш стек: XDG OpenCode (`~/.config/opencode`), per-skill symlinks из `~/.agents/skills`, и secret-aware `token set` (`{file:}` + Cursor inline без `$VAR`). Идеи plan / safe-prune / manifest / profiles — да, вдохновлены vsync.
+vsync - отличный общий sync source→targets. mcp-ctrl заточен под наш стек: XDG OpenCode (`~/.config/opencode`), per-skill symlinks из `~/.agents/skills`, и secret-aware `token set` (`{file:}` + Cursor inline без `$VAR`). Идеи plan / safe-prune / manifest / profiles - да, вдохновлены vsync.
 
 **Нужен ли Node/npm?**  
 Нет. Только `python3` 3.11+.
@@ -326,10 +326,10 @@ vsync — отличный общий sync source→targets. mcp-ctrl заточ
 `~/.agents/skills/` на диске + `skills/manifest.txt` в репо (KEEP). Harness получают симлинки.
 
 **Можно ли коммитить catalog/profiles?**  
-Да. Там нет секретов — только имена серверов и env-ключей.
+Да. Там нет секретов - только имена серверов и env-ключей.
 
 **Что делает `doctor --fix`?**  
-Добавляет недостающие MCP с донора-harness и чинит skills sync (safe). Токены сам не угадывает — после фикса: `token set`.
+Добавляет недостающие MCP с донора-harness и чинит skills sync (safe). Токены сам не угадывает - после фикса: `token set`.
 
 **Ломает ли правки комментарии в `opencode.jsonc`?**  
 Точечный JSONC-редактор старается сохранять комментарии и порядок. Всё равно есть backup.
@@ -362,7 +362,7 @@ Issues и PR приветствуются.
 
 1. Fork → branch → PR в `main`
 2. Без секретов в коммитах
-3. Stdlib only — новые зависимости не добавляем без обсуждения
+3. Stdlib only - новые зависимости не добавляем без обсуждения
 
 ---
 
@@ -372,4 +372,4 @@ Issues и PR приветствуются.
 
 ---
 
-**Если инструмент полезен — поставь ⭐ на [репозитории](https://github.com/anatoly-kulishov/mcp-ctrl).**
+**Если инструмент полезен - поставь ⭐ на [репозитории](https://github.com/anatoly-kulishov/mcp-ctrl).**
