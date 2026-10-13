@@ -9,8 +9,8 @@
 ## Install
 
 ```bash
-git clone <this-repo> ~/src/mcp-ctrl
-cd ~/src/mcp-ctrl
+git clone https://github.com/anatoly-kulishov/mcp-ctrl.git
+cd mcp-ctrl
 ./install.sh
 # ensure ~/.local/bin is on PATH
 mcp-ctrl status
