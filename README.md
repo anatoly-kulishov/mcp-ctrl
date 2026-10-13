@@ -368,7 +368,7 @@ Issues и PR приветствуются.
 
 ## License
 
-Пока без отдельного LICENSE-файла. Если нужен MIT/Apache — открой issue.
+[MIT](LICENSE)
 
 ---
 
